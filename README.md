@@ -1,4 +1,4 @@
-# 🚀 Integrated Multilingual Fairness Framework for AI-Powered Feedback
+# 🚀 Evaluating Cross-Linguistic Fairness in Large Language Model-Generated Writing Feedback
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![R](https://img.shields.io/badge/R-4.2+-276DC3.svg?logo=r&logoColor=white)](https://www.r-project.org/)
@@ -11,14 +11,14 @@
 ## 🖼️ Graphical Abstract
 
 <p align="center">
-  <img src="ga.png" alt="Graphical Abstract - Integrated Multilingual Fairness Framework" width="100%">
+  <img src="figures/ga.png" alt="Graphical Abstract - Theoretical Framework" width="100%">
 </p>
 
 ---
 
 ## 📊 Key Results at a Glance
 
-### Table: Cross-Linguistic Pedagogical Quality & Fairness by Model and Prompt Condition ($N = 24,000$)
+### Cross-Linguistic Pedagogical Quality & Fairness by Model and Prompt Condition
 
 | LLM Architecture | Prompt Condition | Actionability (1–5) | Pedagogical Tone (1–5) | Cognitive Load (1–5) | Linguistic Fairness (1–5) | FQI Score (0–1) | MFI (Cross-L1 Parity) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -29,51 +29,78 @@
 | **Gemini 2.5** | Baseline | 3.650 | 3.890 | 3.610 | 3.490 | 0.732 | 0.760 |
 | **Gemini 2.5** | Fairness-Aware | 4.050 | 4.230 | 3.980 | 3.920 | 0.808 | 0.835 |
 
-> **Summary Takeaway:** The Fairness-Aware prompting condition yielded statistically significant improvements across all dimensions ($p < .001$), narrowing the cross-linguistic evaluation gap across Arabic, Chinese, Persian, and Spanish L1 cohorts.
+> **Key Takeaway:** Fairness-aware prompting reduces cross-linguistic disparity and improves pedagogical quality across Arabic, Chinese, Persian, and Spanish L1 cohorts.
 
 ---
 
-## 🖼️ Visualizations & Figures Gallery
+## 🖼️ Figures & Analytical Visualizations
 
-All high-resolution figures generated across the analytical pipeline are embedded below:
-
-| **Figure 1: End-to-End Workflow** | **Figure 2: L1 Cohort Distributions** |
+| **Figure 1: Methodological Workflow** | **Figure 2: L1 vs. Model Distribution** |
 | :---: | :---: |
-| <img src="results/Fig1_Workflow.png" alt="Figure 1" width="100%"> | <img src="results/Fig2_L1_Distributions.png" alt="Figure 2" width="100%"> |
-| *Methodological pipeline: prompt engineering to metric scoring* | *CEFR score and essay distribution across L1 backgrounds* |
+| <img src="figures/Figure1_workflow.png" alt="Figure 1: Methodological Workflow" width="100%"> | <img src="figures/Figure2_L1_Model.png" alt="Figure 2: L1 vs. Model Distribution" width="100%"> |
+| *End-to-end experimental framework & evaluation stages* | *Score distributions across L1 backgrounds and model architectures* |
 
-| **Figure 3: Metric Distributions (Baseline vs. FA)** | **Figure 4: Model Dimension Comparisons** |
+| **Figure 3: Correlation & Dimension Heatmap** | **Figure 4: Prompt Intervention Effect** |
 | :---: | :---: |
-| <img src="results/Fig3_Metric_Distributions.png" alt="Figure 3" width="100%"> | <img src="results/Fig4_Model_Comparisons.png" alt="Figure 4" width="100%"> |
-| *Empirical score density across 6 evaluation dimensions* | *Comparative breakdown across GPT-4o, Claude 4, and Gemini 2.5* |
+| <img src="figures/Figure3_heatmap.png" alt="Figure 3: Correlation Heatmap" width="100%"> | <img src="figures/Figure4_prompt_effect.png" alt="Figure 4: Prompt Intervention Effect" width="100%"> |
+| *Pairwise metric correlation and dimension alignment* | *Performance shifts between Baseline and Fairness-Aware conditions* |
 
-| **Figure 5: Prompt Intervention Gains ($\Delta$)** | **Figure 6: Multilingual Fairness Index (MFI)** |
+| **Figure 5: Prompt Intervention Distribution** | **Figure 6: L1 × CEFR Interaction** |
 | :---: | :---: |
-| <img src="results/Fig5_Prompt_Intervention.png" alt="Figure 5" width="100%"> | <img src="results/Fig6_MFI_Analysis.png" alt="Figure 6" width="100%"> |
-| *Pairwise performance gain under Fairness-Aware prompt* | *Cross-L1 parity quantification across models* |
+| <img src="figures/Figure5_prompt_distribution.png" alt="Figure 5: Prompt Intervention Distribution" width="100%"> | <img src="figures/Figure6_L1_CEFR.png" alt="Figure 6: L1 × CEFR Interaction" width="100%"> |
+| *Score distributions under Baseline vs. Fairness-Aware interventions* | *Cross-linguistic performance variations across CEFR proficiency tiers* |
 
-| **Figure 7: SBERT Semantic Alignment** | **Figure 8: XGBoost Feature Importance & SHAP** |
+| **Figure 7: Multilingual Fairness Index (MFI)** | **Figure 8: SHAP Feature Importance** |
 | :---: | :---: |
-| <img src="results/Fig7_SBERT_Alignment.png" alt="Figure 7" width="100%"> | <img src="results/Fig8_SHAP_Summary.png" alt="Figure 8" width="100%"> |
-| *Semantic cosine similarity of feedback to learner error types* | *Global feature attributions: Error Density, CEFR, L1 background* |
+| <img src="figures/Figure7_MFI.png" alt="Figure 7: Multilingual Fairness Index" width="100%"> | <img src="figures/Figure8_SHAP_importance.png" alt="Figure 8: SHAP Feature Importance" width="100%"> |
+| *Dispersion, parity gaps, and equity metrics across language cohorts* | *Global feature attributions (Error Density, CEFR, L1 background)* |
 
-| **Figure 9: 5,000-Resample Bootstrap Distributions** | **Figure 10: Theoretical Evaluation Architecture** |
+| **Figure 9: Bootstrap Distributions** | **Figure 10: Theoretical Framework (GA)** |
 | :---: | :---: |
-| <img src="results/Fig9_Bootstrap_Distributions.png" alt="Figure 9" width="100%"> | <img src="results/Fig10_Theoretical_Framework.png" alt="Figure 10" width="100%"> |
-| *95% BCa confidence intervals confirming parameter stability* | *Integrated Multilingual Fairness Theoretical Architecture* |
+| <img src="figures/Figure9_bootstrap.png" alt="Figure 9: Bootstrap Validation" width="100%"> | <img src="figures/ga.png" alt="Figure 10: Theoretical Framework / Graphical Abstract" width="100%"> |
+| *5,000-resample non-parametric bootstrap validation (95% BCa CI)* | *Integrated Multilingual Fairness Theoretical Architecture* |
 
 ---
 
-## 📌 Project Overview
+## 📁 Repository Contents
 
-Automated feedback systems powered by Large Language Models (LLMs) often exhibit implicit sociolinguistic and cross-linguistic disparities. This repository provides the complete analytical suite and dataset for evaluating feedback equity across non-native English writing cohorts.
-
-### Core Metrics:
-1. **Feedback Quality Index (FQI):** Multi-criteria synthesis evaluating pedagogical utility, cognitive load balance, actionability, and tone appropriateness.
-2. **Multilingual Fairness Index (MFI):** Invariance measure quantifying variance in feedback efficacy across distinct L1 speaker groups.
+- `Fairness_Full_Dataset.csv` — main dataset (24,000 records)
+- `README.txt` — supplementary instructions
+- `SM_S4_Data_Dictionary.xlsx`
+- `SM_S5_FQI_MFI_Computation.R`
+- `SM_S6_Mixed_Effects_Analysis.R`
+- `SM_S7_XGBoost_SHAP_Analysis.py`
+- `SM_S8_SBERT_Analysis.py`
+- `SM_S9_Bootstrap_Analysis.R`
+- `SM_S10_Figure_Data.xlsx`
+- `Supplementary_Materials.zip`
 
 ---
 
+## 🔬 Methods Overview
 
-├── requirements.txt                  # Python dependencies
-└── README.md                         # Repository documentation
+This study evaluates cross-linguistic fairness in LLM-generated writing feedback using:
+
+- **Mixed-effects models**
+- **FQI / MFI indices**
+- **XGBoost + SHAP**
+- **SBERT semantic alignment**
+- **5,000-resample bootstrap validation**
+
+---
+
+## 📌 Reproducibility
+
+All code, data dictionary, figure data, and analysis scripts are included in the supplementary package for full reproducibility.
+
+---
+
+## 📄 Citation
+
+If you use this repository, please cite the associated paper.
+
+---
+
+## 📬 Contact
+
+For questions or collaboration, please contact the corresponding author.
