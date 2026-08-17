@@ -4,6 +4,7 @@
 [![R](https://img.shields.io/badge/R-4.2+-276DC3.svg?logo=r&logoColor=white)](https://www.r-project.org/)
 [![Dataset](https://img.shields.io/badge/Dataset-24k%20Records-success.svg)](data/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21973288-blue.svg)](https://doi.org/10.5281/zenodo.21973288)
 [![Open Science](https://img.shields.io/badge/Open%20Science-Reproducible%20Pipeline-blueviolet.svg)](Supplementary_Materials.zip)
 
 ---
@@ -93,11 +94,15 @@ This study evaluates cross-linguistic fairness in LLM-generated writing feedback
 
 All code, data dictionary, figure data, and analysis scripts are included in the supplementary package for full reproducibility.
 
+Archived supplementary materials are also available via Zenodo:
+
+**DOI:** [10.5281/zenodo.21973288](https://doi.org/10.5281/zenodo.21973288)
+
 ---
 
 ## 📄 Citation
 
-If you use this repository, please cite the associated paper.
+If you use this repository, please cite the associated paper and Zenodo record where appropriate.
 
 ---
 
